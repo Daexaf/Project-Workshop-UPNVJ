@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="inner">
+        <div class="container-logo">
+          <a href="#"> Hackernews API </a>
+        </div>
+        <div class="fadein">
+          <a class="js-navbar" data-navbar="news">News</a>
+          <a class="js-navbar" data-navbar="newest">Newest</a>
+          <a class="js-navbar" data-navbar="ask">Ask</a>
+          <a class="js-navbar" data-navbar="show">Show</a>
+          <a class="js-navbar" data-navbar="jobs">Job</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="news-view">
+      <div class="news-list-nav">
+        <span class="js-current-page">1</span>
+        <a class="js-next-page">Next ></a>
+      </div>
+
+      <!-- NEWS LIST -->
+      <div class="news-list">
+        <div class="view" id="container-lists">
+          <!-- NEWS ITEM -->
+          <div class="news-item">
+            <div class="score">90</div>
+            <div class="title">
+              <a href="">TDD from the Factorio Team</a>
+              <span class="host">factorio.com</span>
+            </div>
+            <div class="meta">
+              <span class="by"> by <a href="">sorahn</a> </span>
+              <span class="time">3 hours ago</span>
+              <span class="comments-link">| <a href="">comments: 84</a></span>
+            </div>
+          </div>
+          <!-- END NEWS ITEM -->
+        </div>
+      </div>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
